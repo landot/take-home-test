@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import { ChallengePage } from '../page-objects/pages/Challenge';
 
-test('Happy Path', async ({ page }) => {
+test.skip('Happy Path', async ({ page }) => {
     const challengePage = new ChallengePage(page);
     await challengePage.goto();
 

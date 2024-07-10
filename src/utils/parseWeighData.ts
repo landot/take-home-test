@@ -3,6 +3,9 @@ import { WeighingData } from "../types/weighingData";
 function parseNumberArray(input: string): number[] {
     // Remove first and last character
     const trimmed = input.slice(1, -1);
+    if(trimmed === '') {
+        return []
+    }
     // Split by commas and convert to numbers
     const numbers = trimmed.split(',').map(num => parseInt(num.trim(), 10));
     return numbers;

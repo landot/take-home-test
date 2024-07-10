@@ -3,6 +3,7 @@ import { Buttons } from '../components/Button';
 import { GameInfo } from '../components/GameInfo';
 import { Bowl } from '../components/Bowl';
 import { Coins } from '../components/Coins';
+import { Result } from '../components/Result';
 
 export class ChallengePage {
     readonly page: Page;
@@ -11,6 +12,7 @@ export class ChallengePage {
     readonly leftBowl: Bowl;
     readonly rightBowl: Bowl;
     readonly coins: Coins;
+    readonly result: Result;
 
     constructor(page: Page) {
         this.page = page;
@@ -21,6 +23,7 @@ export class ChallengePage {
         this.leftBowl = new Bowl(this.page, 'left');
         this.rightBowl = new Bowl(this.page, 'right');
         this.coins = new Coins(this.page);
+        this.result = new Result(this.page);
     }
 
     async goto() {
