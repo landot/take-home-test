@@ -1,5 +1,5 @@
 import { test, expect, Dialog } from '@playwright/test';
-import { ChallengePage } from '../../page-objects/pages/Challenge';
+import { ChallengePage } from '../../pageObjects/pages/challenge';
 
 test('Clicking a coin opens a popup', async ({ page }) => {
     const challengePage = new ChallengePage(page);

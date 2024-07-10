@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { ChallengePage } from '../../page-objects/pages/Challenge';
+import { ChallengePage } from '../../pageObjects/pages/challenge';
 test.describe('Weigh Tests', () => {
     let challengePage: ChallengePage;
 

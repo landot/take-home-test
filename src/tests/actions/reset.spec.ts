@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { ChallengePage } from '../../page-objects/pages/Challenge';
+import { ChallengePage } from '../../pageObjects/pages/challenge';
 
 test('Clicking reset clears any bars in the bowls', async ({ page }) => {
     const challengePage = new ChallengePage(page);

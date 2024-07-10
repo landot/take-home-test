@@ -1,9 +1,9 @@
 import { Page } from 'playwright';
-import { Buttons } from '../components/Button';
-import { GameInfo } from '../components/GameInfo';
-import { Bowl } from '../components/Bowl';
-import { Coins } from '../components/Coins';
-import { Result } from '../components/Result';
+import { Buttons } from '../components/button';
+import { GameInfo } from '../components/gameInfo';
+import { Bowl } from '../components/bowl';
+import { Coins } from '../components/coins';
+import { Result } from '../components/result';
 
 export class ChallengePage {
     readonly page: Page;

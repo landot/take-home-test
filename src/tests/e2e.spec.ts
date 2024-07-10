@@ -1,5 +1,5 @@
 import { Dialog, expect, test } from '@playwright/test';
-import { ChallengePage } from '../page-objects/pages/Challenge';
+import { ChallengePage } from '../pageObjects/pages/challenge';
 
 test('Algorithm can be used to find the fake gold bar', async ({ page }) => {
     let dialogMessage = '';
