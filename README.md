@@ -11,7 +11,7 @@ Make sure you have the following installed:
 
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/landot/take-home-test
+git clone https://github.com/landot/take-home-test.git
 ```
 Move to the repo's directory:
 ```bash
