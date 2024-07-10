@@ -55,5 +55,21 @@ Next you put the first bar of the group on the left bowl and the second bar of t
 
 
 ## Organizing Tests:
+There are 2 sets of tests in this project.
+
+1. `src/tests/actions` contains component-level tests for functionality like picking a coin, resetting the scale, and weighing different sets of bars
+2. `src/tests/e2e.spec.ts` contains a single end-to-end test that uses an algorithm to find the fake bar by comparing different sets of bars
 
 ## Folder structure:
+The project is organized in the following manner:
+```
+src
+    pageObjects
+        components (page objects for smaller components on the page like bowls, coins, etc)
+        pages (the page object for the challenge page that uses the component page objects)
+    tests
+        actions (component-level tests)
+        e2e.spec.ts (the e2e test that uses the algorithm to find the fake bar)
+    types (misc types used in the tests)
+    utils (misc utils used in the tests)
+```
