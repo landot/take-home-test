@@ -1,3 +1,6 @@
+## Summary
+
+This repo contains Playwright tests in Typescript 
 
 ## Prerequisites
 
@@ -8,11 +11,11 @@ Make sure you have the following installed:
 
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/landot/__________
+git clone https://github.com/landot/take-home-test
 ```
 Move to the repo's directory:
 ```bash
-cd ________
+cd take-home-test
 ```
 
 Set Node version to lts/iron:
@@ -76,8 +79,8 @@ src
 
 ## Fun extras:
 This project has pre-commit hooks set up so that it checks that:
-# there are no linting errors
-# there are no failing tests
-# the commit message matches the [conventional commits reccomendations](https://www.conventionalcommits.org/en/v1.0.0/) 
+- there are no linting errors
+- there are no failing tests
+- the commit message matches the [conventional commits reccomendations](https://www.conventionalcommits.org/en/v1.0.0/) 
 
 There are more browsers and device emulators that can be configured to run in the `playwright.config.ts` file. I wanted to keep it simple with chromium desktop for now but there is always space to expand
