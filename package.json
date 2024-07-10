@@ -6,6 +6,8 @@
   "scripts": {
     "lint": "npx eslint .",
     "test": "npx playwright test",
+    "test:components": "npx playwright test src/tests/actions",
+    "test:e2e": "npx playwright test src/tests/e2e.spec.ts",
     "report": "playwright show-report",
     "prepare": "husky"
   },
