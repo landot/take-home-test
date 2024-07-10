@@ -73,3 +73,11 @@ src
     types (misc types used in the tests)
     utils (misc utils used in the tests)
 ```
+
+## Fun extras:
+This project has pre-commit hooks set up so that it checks that:
+# there are no linting errors
+# there are no failing tests
+# the commit message matches the [conventional commits reccomendations](https://www.conventionalcommits.org/en/v1.0.0/) 
+
+There are more browsers and device emulators that can be configured to run in the `playwright.config.ts` file. I wanted to keep it simple with chromium desktop for now but there is always space to expand
