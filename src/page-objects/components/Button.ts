@@ -7,7 +7,8 @@ export class Buttons {
 
     constructor(page: Page) {
         this.page = page;
-        this.resetButton = this.page.locator('#reset');
+        // because there are multiple elements with #reset 
+        this.resetButton = this.page.locator('div:not(.result) > #reset');
         this.weighButton = this.page.locator('#weigh');
     }
 

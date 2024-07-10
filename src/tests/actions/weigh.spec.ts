@@ -35,4 +35,22 @@ test.describe('Weigh Tests', () => {
         expect(weighing).toEqual({"left": [1, 2], "operator": ">", "right": [3]});
         expect(result).toBe('>')
     });
+
+    test('Clicking weigh multiple times will result in a list of weighings', async () => {
+        await challengePage.buttons.clickWeighButton();
+        
+        await expect(challengePage.gameInfo.weighInfo).toHaveCount(1);
+        let weighings = await challengePage.gameInfo.getAllWeighings();
+        expect(weighings[0]).toEqual({"left": [], "operator": "=", "right": []});
+        
+        await challengePage.leftBowl.setInputsFromArray([1, 2]);
+        await challengePage.rightBowl.setInputsFromArray([3]);
+        await challengePage.buttons.clickWeighButton();
+
+        await expect(challengePage.gameInfo.weighInfo).toHaveCount(2);
+        weighings = await challengePage.gameInfo.getAllWeighings();
+
+        expect(weighings[0]).toEqual({"left": [], "operator": "=", "right": []});
+        expect(weighings[1]).toEqual({"left": [1, 2], "operator": ">", "right": [3]});
+    });
 });

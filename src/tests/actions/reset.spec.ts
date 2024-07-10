@@ -8,9 +8,11 @@ test('Clicking reset clears any bars in the bowls', async ({ page }) => {
     await challengePage.leftBowl.setInputsFromArray([1, 2]);
     await challengePage.rightBowl.setInputsFromArray([3, 4]);
 
+    await challengePage.buttons.clickResetButton();
+
     const leftBars = await challengePage.leftBowl.getInputtedBars();
     const rightBars = await challengePage.rightBowl.getInputtedBars();
 
-    expect(leftBars).toEqual([1, 2]);
-    expect(rightBars).toEqual([3, 4]);
+    expect(leftBars).toEqual([]);
+    expect(rightBars).toEqual([]);
 });

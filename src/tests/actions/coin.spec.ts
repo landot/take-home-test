@@ -15,7 +15,7 @@ test('Clicking a coin opens a popup', async ({ page }) => {
     await challengePage.coins.clickCoinWithValue(1);
 
     // only assert that the popup exists and not the inner text
-    // the e2e test will verify functionality of selecting the correct and incorrect answer
+    // the e2e test will verify functionality of selecting the correct answer
     expect(dialogMessage).not.toEqual('');
 
 });
