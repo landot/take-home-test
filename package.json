@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "lint": "npx eslint .",
-    "test": "playwright test",
+    "test": "npx playwright test",
     "report": "playwright show-report",
     "prepare": "husky"
   },
